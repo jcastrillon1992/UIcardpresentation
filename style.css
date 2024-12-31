@@ -1,0 +1,151 @@
+/* Establecemos la fuente global para todo el documento */
+* {
+    font-family: sans-serif; /* Usamos una fuente sans-serif para todo el texto */
+    margin: 0; /* Eliminamos márgenes predeterminados */
+    padding: 0; /* Eliminamos el padding predeterminado */
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten al tamaño del elemento */
+}
+
+/* Estilo para el body, el cual es el fondo de la página */
+body {
+    height: 100vh; /* Establece que el body ocupe toda la altura de la ventana */
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    background-color: rgb(117, 0, 133); /* Color de fondo morado */
+}
+
+/* Estilo para la tarjeta de perfil */
+.profile-card {
+    display: flex; /* Usamos flexbox para organizar el contenido */
+    flex-direction: column; /* Colocamos los elementos de arriba hacia abajo */
+    align-items: center; /* Centra los elementos horizontalmente */
+    max-width: 370px; /* Establecemos el ancho máximo de la tarjeta */
+    width: 100%; /* La tarjeta ocupa todo el ancho disponible hasta el máximo */
+    background: #fff; /* Fondo blanco para la tarjeta */
+    border-radius: 24px; /* Bordes redondeados */
+    padding: 25px; /* Espaciado interno */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de la tarjeta */
+}
+
+/* Estilo para la imagen del perfil */
+.image {
+    position: relative; /* Posición relativa para ajustar los elementos internos */
+    height: 150px; /* Altura de la imagen del perfil */
+    width: 150px; /* Ancho de la imagen del perfil */
+    border-radius: 50%; /* Redondeamos la imagen para que sea circular */
+    background-color: #070006; /* Fondo oscuro detrás de la imagen */
+    padding: 3px; /* Un pequeño borde alrededor de la imagen */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+/* Estilo específico para la imagen del perfil */
+.image .profile-img {
+    height: 100%; /* La imagen ocupa todo el espacio del contenedor */
+    width: 100%; /* La imagen ocupa todo el espacio del contenedor */
+    object-fit: cover; /* Hace que la imagen se ajuste y cubra el contenedor sin deformarse */
+    border-radius: 50%; /* Redondeamos la imagen para que sea circular */
+    border: 3px solid #fff; /* Borde blanco alrededor de la imagen */
+}
+
+/* Estilo para los datos de texto (nombre y ocupación) */
+.profile-card .text-data {
+    display: flex; /* Usamos flexbox para organizar los elementos */
+    flex-direction: column; /* Los elementos se colocan uno encima del otro */
+    align-items: center; /* Centra los elementos horizontalmente */
+    color: #494949; /* Color de texto gris */
+    margin: 8px; /* Espacio alrededor de los elementos */
+}
+
+/* Estilo para el nombre */
+.text-data .name {
+    font-size: 22px; /* Tamaño de fuente más grande para el nombre */
+    font-weight: 400; /* Peso normal */
+}
+
+/* Estilo para la ocupación o trabajo */
+.text-data .job {
+    font-size: 15px; /* Tamaño de fuente más pequeño para la ocupación */
+    font-weight: 400; /* Peso normal */
+}
+
+/* Estilo para los botones de redes sociales */
+.profile-card .media-buttons {
+    display: flex; /* Usamos flexbox para organizar los botones en fila */
+    align-items: center; /* Alineamos los botones al centro */
+    margin-top: 15px; /* Espacio superior */
+}
+
+/* Estilo base para los enlaces de redes sociales */
+.media-buttons .link {
+    display: flex; /* Usamos flexbox para organizar el icono dentro del enlace */
+    align-items: center; /* Alineamos los iconos al centro */
+    justify-content: center; /* Aseguramos que el icono esté centrado */
+    color: #fff; /* Color de los iconos: blanco */
+    font-size: 18px; /* Tamaño del icono */
+    height: 34px; /* Altura del contenedor del icono */
+    width: 34px; /* Ancho del contenedor del icono */
+    border-radius: 50%; /* Redondeamos el contenedor */
+    margin: 0 5px; /* Espaciado entre los iconos */
+    text-decoration: none; /* Quitamos el subrayado de los enlaces */
+}
+
+/* Colores específicos para los íconos de redes sociales */
+.media-buttons .facebook {
+    background-color: #3b5998; /* Color específico para Facebook */
+}
+
+.media-buttons .instagram {
+    background-color: #e4405f; /* Color específico para Instagram */
+}
+
+.media-buttons .twitter {
+    background-color: #1da1f2; /* Color específico para Twitter */
+}
+
+.media-buttons .youtube {
+    background-color: #ff0000; /* Color específico para YouTube */
+}
+
+/* Estilo para los botones de contacto (WhatsApp y correo electrónico) */
+.contact-buttons .link {
+    display: flex; /* Usamos flexbox para organizar los iconos */
+    align-items: center; /* Alineamos los iconos al centro */
+    justify-content: center; /* Aseguramos que los iconos estén centrados */
+    color: #fff; /* Color blanco para los iconos */
+    font-size: 18px; /* Tamaño del icono */
+    height: 34px; /* Altura del contenedor del icono */
+    width: 34px; /* Ancho del contenedor del icono */
+    border-radius: 50%; /* Redondeamos el contenedor del icono */
+    margin: 0 5px; /* Espaciado entre los iconos */
+    text-decoration: none; /* Quitamos el subrayado de los enlaces */
+}
+
+/* Colores específicos para los botones de contacto */
+.contact-buttons .whatsapp {
+    background-color: #25d366; /* Color específico para WhatsApp */
+}
+
+.contact-buttons .email {
+    background-color: #d14836; /* Color específico para Email/Gmail */
+}
+
+/* Estilo para el botón principal (Suscríbete) */
+.buttons .button {
+    color: #fff; /* Texto blanco para el botón */
+    font-size: 14px; /* Tamaño de la fuente en el botón */
+    border-radius: 24px; /* Bordes redondeados */
+    background-color: rgb(0, 17, 255); /* Fondo azul del botón */
+    border: none; /* Quitamos el borde del botón */
+    padding: 8px 20px; /* Espaciado interno del botón */
+    margin-top: 15px; /* Espacio superior para separar el botón del resto */
+    cursor: pointer; /* El cursor se convierte en puntero al pasar por encima */
+}
+
+/* Estilo para los botones de contacto, organizados horizontalmente */
+.contact-buttons {
+    display: flex; /* Usamos flexbox para organizar los botones en fila */
+    justify-content: center; /* Centra los botones en el contenedor */
+    gap: 10px; /* Espaciado entre los botones */
+    margin-top: 15px; /* Espacio superior para separar los botones de contacto */
+}
